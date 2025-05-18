@@ -1,0 +1,19 @@
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.outfit-head {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+#projects {
+    height: 70vh;
+    background-color: red;
+}
+
+#certifications {
+    height: 70vh;
+    background-color: blue;
+}

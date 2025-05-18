@@ -6,24 +6,43 @@
   <title>Kurt Wolfer – Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Outfit-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="ml-[200px]">
-    <h1>Kurt Wolfer</h1>
-    <p>Web Developer | Data Analyst | Builder</p>
+  <header class="flex justify-center items-center gap-16 space-y-8 mt-20">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl outfit-head space-x-16 ">Kurt Wolfer</h1>
+    <p class="outfit-head text-xl md:text-2xl text-blue-300">Web Development | Data Analysis </p>
+    <nav class=" flex gap-8 font-semibold">
+      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">About</a>
+      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
+      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Certifications</a>
+      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Experience</a>
+    </nav>
   </header>
-    <!-- Sidebar-->
-    <div id="sidebar"></div>
+    
     <!-- Main Content-->
-  <section class="ml-[200px]" id="projects">
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
         <li><a href="https://dragonwarriormonsters.tech" target="_blank" rel="noopener noreferrer">Dragon Warrior Monsters Database</a></li>
       <li><a href="projects/marchmadness.html">March Madness SQL Tracker</a></li>
     </ul>
   </section>
+  <section class="" id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>PostgreSQL</li>
+    </ul>
+  </section>
 
-  <footer class="ml-[200px]">
+  <footer class="">
     <p>© 2025 Kurt Wolfer</p>
   </footer>
 </body>

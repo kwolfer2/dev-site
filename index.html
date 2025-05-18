@@ -14,8 +14,8 @@
 <body>
   <header class="flex justify-center items-center gap-16 space-y-8 mt-10">
     <h1 class="text-3xl md:text-4xl lg:text-5xl outfit-head space-x-16 ">Kurt Wolfer</h1>
-    <p class="outfit-head text-xl md:text-2xl text-blue-300">Web Development | Data Analysis </p>
-    <nav class=" flex gap-8 font-semibold">
+    <p class="outfit-head text-xl md:text-2xl text-blue-300 outfit-p">Web Development | Data Analysis </p>
+    <nav class=" flex gap-8 font-semibold outfit-p">
       <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">About</a>
       <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
       <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Certifications</a>
@@ -24,13 +24,25 @@
   </header>
     
     <!-- Main Content-->
-  <section id="about" class="items-center flex justify-center space-y-20 space-x-16 gap-20">
-    <div>This is info about me
-      <ul>
-        <li>resume</li>
-        <li>linkedin</li>
-        <li>github</li>
-      </ul>
+  <section id="about" class="items-center flex justify-center space-y-20 space-x-16 gap-20 outfit-p">
+    <div id="info-container" class="flex justify-center items-center gap-y-12 gap-8">
+      <div id="info-text" class="flex flex-col justify-center items-center gap-y-8">
+
+        <h3 class="text-2xl font-semibold">Kurt Wolfer</h3>
+        <p class="px-8 py-3 italic font-medium border-2 rounded-lg text-center hover:bg-black hover:text-white">My Resume</p>
+      </div>
+      <div id="info-socials" class="flex flex-col items-center gap-y-6">
+        <a href="https://github.com/kwolfer2" target="_blank" rel="noopener noreferrer">
+          <img src="assets/github.png" class="w-12 h-auto" />
+        </a>
+        <a href="https://www.linkedin.com/in/kurt-wolfer-1b848a175" target="_blank" rel="noopener noreferrer">
+          <img class="w-12 h-auto" src="assets/linkedin.png" />
+        </a>
+        <a href="mailto:kwolfer2@gmail.com">
+          <img class="w-14 h-auto" src="assets/email.png">
+        </a>
+
+      </div>
     </div>
     <img class="prof-pic"placeholder="pic of me" src="assets/Kurt.jpg">
   </section>

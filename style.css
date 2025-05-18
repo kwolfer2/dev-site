@@ -5,7 +5,12 @@ h1 {
 .outfit-head {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
+}
+.outfit-p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
 }
 
 #projects {
@@ -20,4 +25,5 @@ h1 {
 .prof-pic {
     height: 30vh;
     width: auto;
+
 }

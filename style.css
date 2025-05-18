@@ -17,3 +17,7 @@ h1 {
     height: 70vh;
     background-color: blue;
 }
+.prof-pic {
+    height: 30vh;
+    width: auto;
+}

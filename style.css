@@ -15,15 +15,22 @@ h1 {
 
 #projects {
     height: 70vh;
-    background-color: red;
+    /* background-color: red; */
 }
 
 #certifications {
     height: 70vh;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .prof-pic {
     height: 30vh;
     width: auto;
 
+}
+.scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }

@@ -6,13 +6,15 @@
   <title>Kurt Wolfer – Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fontawesome -->
+   <script src="https://kit.fontawesome.com/5a11755932.js" crossorigin="anonymous"></script>
   <!-- Google Font: Outfit-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-16 space-y-8 mt-10">
+  <header class="flex flex-col lg:flex-row justify-center items-center gap-2 -mb-24 lg:mb-2 lg:gap-16 space-y-8 mt-10">
     <h1 class="text-3xl md:text-4xl lg:text-5xl outfit-head space-x-16 ">Kurt Wolfer</h1>
     <p class="outfit-head text-xl md:text-2xl text-blue-300 outfit-p">Web Development | Data Analysis </p>
     <nav class=" flex flex-col lg:flex-row text-center gap-4 font-semibold outfit-p">
@@ -45,37 +47,42 @@
         </a>
 
       </div>
-      <img class="prof-pic rounded-2xl"placeholder="pic of me" src="assets/Kurt.jpg">
+      <img class="prof-pic rounded-2xl min-w-[216px] min-h-[216px]" placeholder="pic of me" src="assets/Kurt.jpg">
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class=" px-4 py-12 gap-5 outfit-p">
-    <h1 class="outfit-head text-4xl p-2 text-center">Projects</h1>
-    <div id="projects-container" class="flex flex-col md:flex-row justify-center text-2xl items-center gap-8 w-full max-w-5xl mx-auto">
+  <h1 class="outfit-head text-4xl p-2 -mt-4 text-center">Projects</h1>
+  <section id="projects" class="p-6 outfit-p overflow-scroll scrollbar-hide">
+    <div id="projects-container" class="flex flex-col relative md:flex-row justify-center text-2xl items-center gap-8 w-full max-w-5xl mx-auto">
 
-      <div id="project1" class="border-2 rounded-xl p-4 items-center justify-between text-center  flex flex-col w-2/3 md:w-1/2 min-h-[500px] max-w-md">
+      <div id="project1" class="border-2 rounded-xl p-4 items-center justify-between text-center flex flex-col w-2/3 md:w-1/2 min-h-[500px] max-w-md">
         <h2 class="font-bold">Dragon Warrior Monsters Site</h2>
         <p class="text-lg">Video Game Beastiary and Breeding Tool</p>
         <img src="assets/DragonWarriorMonsters.jpg" class="w-2/3 h-auto">
-        <a href="https://dragonwarriormonsters.tech">
-          <img class="p-2 w-16 h-auto bg-gray-400 rounded-full" src="assets/link.png" />
+        <a href="https://dragonwarriormonsters.tech" target="_blank" rel="noopener noreferrer">
+          <img class="p-2 w-12 h-auto bg-gray-400 rounded-full" src="assets/link.png" />
         </a>
       </div>
       <div id="project2" class="border-2 rounded-xl p-4 items-center justify-between text-center flex flex-col w-2/3 md:w-1/2 min-h-[500px] max-w-md">
         <h2 class="font-bold">freeCodeCamp Certification Projects</h2>
         <p class="text-lg">HTML, CSS, JavaScript, React, D3</p>
         <img src="assets/codepen.png" class="w-2/3 h-auto bg-black rounded-full px-8 py-8">
-        <a href="https://codepen.io/kwolfer2/pens">
-          <img class="p-2 w-16 h-auto bg-gray-400 rounded-full" src="assets/link.png" />
+        <a href="https://codepen.io/kwolfer2/pens" target="_blank" rel="noopener noreferrer">
+          <img class="p-2 w-12 h-auto bg-gray-400 rounded-full" src="assets/link.png" />
         </a>
       </div>
     </div>
   </section>
-  <section class="px-4 py-12 gap-5 outfit-p" id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>HTML</li>
+  <section class="px-4 py-12 gap-5 outfit-p items-center text-center" id="certifications">
+    <h1 class="outfit-head text-4xl p-2 -mt-4 mb-4 text-center"> Certifications</h1>
+    <a href="https://www.freecodecamp.org/kwolfer2" target="_blank" rel="noopener noreferrer"> 
+      <p class="text-xl "> freecodecamp 
+        <i class="fa-brands ml-4 fa-free-code-camp fa-beat text-4xl"></i>
+      </p>
+    </a>
+    <ul class="flex flex-col items-center">
+      <li class="text-blue-900 text-xl border-2 w-1/2 justify-center">HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
       <li>React</li>

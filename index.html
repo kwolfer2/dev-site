@@ -12,16 +12,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!-- freeCodeCamp font-->
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header class="flex flex-col lg:flex-row justify-center items-center gap-2 -mb-24 lg:mb-2 lg:gap-16 space-y-8 mt-10">
-    <h1 class="text-3xl md:text-4xl lg:text-5xl outfit-head space-x-16 ">Kurt Wolfer</h1>
+    <h1 class="text-3xl md:text-4xl lg:text-5xl outfit-head space-x-16" id="home">Kurt Wolfer</h1>
     <p class="outfit-head text-xl md:text-2xl text-blue-300 outfit-p">Web Development | Data Analysis </p>
     <nav class=" flex flex-col lg:flex-row text-center gap-4 font-semibold outfit-p">
-      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">About</a>
-      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
-      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Certifications</a>
-      <a class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Experience</a>
+      <a href="#about" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">About</a>
+      <a href="#projects" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
+      <a href="#certifications" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Certifications</a>
+      <a href="#skills" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Skills</a>
     </nav>
   </header>
     
@@ -33,9 +36,9 @@
       <div id="info-text" class="flex flex-col justify-center items-center gap-y-8">
 
         <h3 class="text-2xl font-semibold text-center">Kurt Wolfer</h3>
-        <p class="px-8 py-3 italic font-medium border-2 rounded-lg text-center hover:bg-black hover:text-white">My Resume</p>
+        <button class="px-8 py-3 italic font-medium border-2 rounded-lg text-center hover:bg-black hover:text-white" onclick="window.open('./assets/resume.pdf')">Resume</button>
       </div>
-      <div id="info-socials" class="flex flex-col items-center gap-4">
+      <div id="info-socials" class="flex flex-row md:flex-col items-center gap-4">
         <a href="https://github.com/kwolfer2" target="_blank" rel="noopener noreferrer">
           <img src="assets/github.png" class="min-w-[48px] w-12 h-12" />
         </a>
@@ -43,7 +46,7 @@
           <img class="min-w-[48px] w-12 h-12" src="assets/linkedin.png" />
         </a>
         <a href="mailto:kwolfer2@gmail.com">
-          <img class="min-w-[48px] w-14 h-14" src="assets/email.png">
+          <img class="min-w-[56px] w-14 h-14" src="assets/email.png">
         </a>
 
       </div>
@@ -74,23 +77,43 @@
       </div>
     </div>
   </section>
-  <section class="px-4 py-12 gap-5 outfit-p items-center text-center" id="certifications">
-    <h1 class="outfit-head text-4xl p-2 -mt-4 mb-4 text-center"> Certifications</h1>
+  <h1 class="outfit-head text-4xl p-2 mt-4 text-center"> Certifications</h1>
+  <section class="p-4 outfit-p items-center text-center overflow-scroll scrollbar-hide lg:mb-0 max-h-[300px]" id="certifications">
     <a href="https://www.freecodecamp.org/kwolfer2" target="_blank" rel="noopener noreferrer"> 
-      <p class="text-xl "> freecodecamp 
+      <p class="text-xl fcc-font mb-2"> freeCodeCamp 
         <i class="fa-brands ml-4 fa-free-code-camp fa-beat text-4xl"></i>
       </p>
     </a>
     <ul class="flex flex-col items-center">
-      <li class="text-blue-900 text-xl border-2 w-1/2 justify-center">HTML</li>
+      <li class="text-blue-900 text-xl border-2 w-1/2 justify-center">Responsive Web Design</li>
+      <li class="text-blue-900 text-xl border-2 w-1/2 justify-center">JavaScript Algorithms and Data Structures</li>
+      <li class="text-blue-900 text-xl border-2 w-1/2 justify-center">Front End Development Libraries</li>
+      <li class="text-blue-900 text-xl border-2 w-1/2 justify-center">Data Visualization</li>
+      <li class="text-blue-900 text-xl border-2 w-1/2 justify-center">Relational Database</li>
+      <li class="text-gray-400 text-xl border-2 w-1/2 justify-center">Scientific Computing with Python <i>coming soon</i></li>
+    </ul>
+  </section>
+  <h1 class="outfit-head text-4xl p-2 text-center" id="skills">Skills</h1>
+  <section class="p-2">
+    <ul class="grid grid-cols-2 p-4 gap-4 outfit-p border-2 w-2/3 mx-auto text-center text-lg md:text-2xl font-bold">
+      <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
       <li>React</li>
+      <li>D3</li>
       <li>PostgreSQL</li>
+      <li>Python</li>
     </ul>
   </section>
+  <section class="flex justify-center p-6">
 
-  <footer class="">
+    <nav class="flex flex-col lg:flex-row text-center gap-4 font-semibold outfit-p">
+      <a href="#home" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Home</a>
+      <a href="#projects" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
+      <a href="#certifications" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Certifications</a>
+    </nav>
+  </section>
+  <footer class="mt-6 text-center">
     <p>© 2025 Kurt Wolfer</p>
   </footer>
 </body>

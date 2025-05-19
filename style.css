@@ -12,6 +12,9 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 300;
 }
+.fcc-font {
+    font-family: 'Fira Code', monospace;
+}
 
 #projects {
     height: 70vh;

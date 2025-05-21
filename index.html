@@ -22,7 +22,7 @@
     <p class="outfit-head text-xl md:text-2xl text-blue-300 outfit-p">Web Development | Data Analysis </p>
     <nav class=" flex flex-col lg:flex-row text-center gap-4 font-semibold outfit-p">
       <a href="#about" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">About</a>
-      <a href="#projects" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
+      <a href="#projects-header" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
       <a href="#certifications" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Certifications</a>
       <a href="#skills" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Skills</a>
     </nav>
@@ -38,15 +38,15 @@
         <h3 class="text-2xl font-semibold text-center">Kurt Wolfer</h3>
         <button class="px-8 py-3 italic font-medium border-2 rounded-lg text-center hover:bg-black hover:text-white" onclick="window.open('./assets/resume.pdf')">Resume</button>
       </div>
-      <div id="info-socials" class="flex flex-row md:flex-col items-center gap-4">
+      <div id="info-socials" class="flex flex-row md:flex-col items-center gap-4 lg:mr-24">
         <a href="https://github.com/kwolfer2" target="_blank" rel="noopener noreferrer">
-          <img src="assets/github.png" class="min-w-[48px] w-12 h-12" />
+          <img src="assets/github.png" class="min-w-[48px] w-12 h-12 transition-transform duration-300 ease-in-out transform hover:scale-125" />
         </a>
         <a href="https://www.linkedin.com/in/kurt-wolfer-1b848a175" target="_blank" rel="noopener noreferrer">
-          <img class="min-w-[48px] w-12 h-12" src="assets/linkedin.png" />
+          <img class="min-w-[48px] w-12 h-12 transition-transform duration-300 ease-in-out transform hover:scale-125" src="assets/linkedin.png" />
         </a>
         <a href="mailto:kwolfer2@gmail.com">
-          <img class="min-w-[56px] w-14 h-14" src="assets/email.png">
+          <img class="min-w-[56px] w-14 h-14 transition-transform duration-300 ease-in-out transform hover:scale-125" src="assets/email.png">
         </a>
 
       </div>
@@ -55,16 +55,16 @@
   </section>
 
   <!-- Projects -->
-  <h1 class="outfit-head text-4xl p-2 -mt-4 text-center">Projects</h1>
+  <h1 id="projects-header" class="outfit-head text-4xl p-2 -mt-16 lg:mt-0 text-center">Projects</h1>
   <section id="projects" class="p-6 outfit-p overflow-scroll scrollbar-hide">
     <div id="projects-container" class="flex flex-col relative md:flex-row justify-center text-2xl items-center gap-8 w-full max-w-5xl mx-auto">
 
       <div id="project1" class="border-2 rounded-xl p-4 items-center justify-between text-center flex flex-col w-2/3 md:w-1/2 min-h-[500px] max-w-md">
         <h2 class="font-bold">Dragon Warrior Monsters Site</h2>
-        <p class="text-lg">Video Game Beastiary and Breeding Tool</p>
+        <p class="text-lg">Video Game Bestiary and Breeding Tool</p>
         <img src="assets/DragonWarriorMonsters.jpg" class="w-2/3 h-auto">
         <a href="https://dragonwarriormonsters.tech" target="_blank" rel="noopener noreferrer">
-          <img class="p-2 w-12 h-auto bg-gray-400 rounded-full" src="assets/link.png" />
+          <img class="p-2 w-12 h-auto bg-gray-400 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-125" src="assets/link.png" />
         </a>
       </div>
       <div id="project2" class="border-2 rounded-xl p-4 items-center justify-between text-center flex flex-col w-2/3 md:w-1/2 min-h-[500px] max-w-md">
@@ -72,7 +72,7 @@
         <p class="text-lg">HTML, CSS, JavaScript, React, D3</p>
         <img src="assets/codepen.png" class="w-2/3 h-auto bg-black rounded-full px-8 py-8">
         <a href="https://codepen.io/kwolfer2/pens" target="_blank" rel="noopener noreferrer">
-          <img class="p-2 w-12 h-auto bg-gray-400 rounded-full" src="assets/link.png" />
+          <img class="p-2 w-12 h-auto bg-gray-400 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-125" src="assets/link.png" />
         </a>
       </div>
     </div>
@@ -80,8 +80,8 @@
   <h1 class="outfit-head text-4xl p-2 mt-4 text-center"> Certifications</h1>
   <section class="p-4 outfit-p items-center text-center overflow-scroll scrollbar-hide lg:mb-0 max-h-[300px]" id="certifications">
     <a href="https://www.freecodecamp.org/kwolfer2" target="_blank" rel="noopener noreferrer"> 
-      <p class="text-xl fcc-font mb-2"> freeCodeCamp 
-        <i class="fa-brands ml-4 fa-free-code-camp fa-beat text-4xl"></i>
+      <p class="inline-block px-6 py-2 text-xl fcc-font mb-2 border-2 border-transparent hover:bg-gray-200 rounded-2xl transition-all duration-300 ease-in-out transform hover:scale-110"> freeCodeCamp 
+        <i class="fa-brands ml-4 fa-free-code-camp fa-beat text-3xl"></i>
       </p>
     </a>
     <ul class="flex flex-col items-center">
@@ -109,7 +109,7 @@
 
     <nav class="flex flex-col lg:flex-row text-center gap-4 font-semibold outfit-p">
       <a href="#home" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Home</a>
-      <a href="#projects" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
+      <a href="#projects-header" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Projects</a>
       <a href="#certifications" class="px-4 py-2 rounded-full bg-gray-200 hover:text-gray-200 hover:bg-black">Certifications</a>
     </nav>
   </section>

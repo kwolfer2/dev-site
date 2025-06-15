@@ -16,20 +16,6 @@ h1 {
     font-family: 'Fira Code', monospace;
 }
 
-#projects {
-    height: 70vh;
-    /* background-color: red; */
-}
-
-#certifications {
-    height: 70vh;
-    /* background-color: blue; */
-}
-.prof-pic {
-    height: 30vh;
-    width: auto;
-
-}
 .scrollbar-hide {
     scrollbar-width: none;
     -ms-overflow-style: none;
